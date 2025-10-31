@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 function Hero() {
-    const [hoveredButton, setHoveredButton] = useState(null);
+    const [hoveredButton, setHoveredButton] = useState<'explore' | 'learn' | null>(null);
 
     return (
         <div className='relative'>
